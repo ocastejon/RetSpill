@@ -25,5 +25,8 @@ run cd /angrop && pip install -e .
 run apt-get install -y gdb
 run mkdir /root/.ssh/
 
+# dependencies for extract-vmlinux
+run apt-get install -y lzop lz4 zstd
+
 workdir /RetSpill/igni
 cmd bash
